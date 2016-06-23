@@ -11,45 +11,43 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet</artifactId>
-      <version>3.0.0.v201103241009</version>
-    </dependency>
+	  <groupId>javax.servlet.jsp.jstl</groupId>
+	  <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+	  <version>1.2.1</version>
+	</dependency>
     <dependency>
-      <groupId>com.mysql.jdbc</groupId>
-      <artifactId>com.springsource.com.mysql.jdbc</artifactId>
-      <version>5.1.6</version>
-    </dependency>
+	  <groupId>mysql</groupId>
+	  <artifactId>mysql-connector-java</artifactId>
+	  <version>6.0.2</version>
+	  <type>pom</type>
+	</dependency>
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>com.springsource.org.apache.commons.dbcp</artifactId>
-      <version>1.2.2.osgi</version>
-    </dependency>
+	  <groupId>commons-logging</groupId>
+	  <artifactId>commons-logging</artifactId>
+	  <version>1.2</version>
+	</dependency>
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>org.apache.commons.logging</artifactId>
-      <version>1.0.4.v200706111724</version>
-    </dependency>
+	  <groupId>org.apache.directory.studio</groupId>
+	  <artifactId>org.apache.commons.pool</artifactId>
+	  <version>1.6</version>
+	</dependency>
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>com.springsource.org.apache.commons.pool</artifactId>
-      <version>1.5.3</version>
-    </dependency>
+	  <groupId>junit</groupId>
+	  <artifactId>junit</artifactId>
+	  <version>4.12</version>
+	</dependency>
     <dependency>
-      <groupId>org.junit</groupId>
-      <artifactId>com.springsource.org.junit</artifactId>
-      <version>4.11.0</version>
-    </dependency>
+	  <groupId>log4j</groupId>
+	  <artifactId>log4j</artifactId>
+	  <version>1.2.17</version>
+	  <type>zip</type>
+	</dependency>
     <dependency>
-      <groupId>org.apache.log4j</groupId>
-      <artifactId>org.apache.log4j</artifactId>
-      <version>1.2.13.v200706111418</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.taglibs</groupId>
-      <artifactId>com.springsource.org.apache.taglibs.standard</artifactId>
-      <version>1.1.2.v20110517</version>
-    </dependency>
+	  <groupId>org.apache.taglibs</groupId>
+	  <artifactId>taglibs-standard</artifactId>
+	  <version>1.2.5</version>
+	  <type>pom</type>
+	</dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -107,41 +105,39 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>org.springframework.web.servlet</artifactId>
-      <version>3.0.6.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>com.springsource.org.aspectj.weaver</artifactId>
-      <version>1.7.2.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>com.springsource.org.codehaus.groovy</artifactId>
-      <version>1.8.8</version>
-    </dependency>
-    <dependency>
-      <groupId>net.sourceforge.cglib</groupId>
-      <artifactId>com.springsource.net.sf.cglib</artifactId>
-      <version>2.2.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
       <version>3.0.6.RELEASE</version>
     </dependency>
     <dependency>
-      <groupId>org.aopalliance</groupId>
-      <artifactId>com.springsource.org.aopalliance</artifactId>
-      <version>1.0.0</version>
-    </dependency>
+	  <groupId>aopalliance</groupId>
+	  <artifactId>aopalliance</artifactId>
+	  <version>1.0</version>
+	</dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.1.0</version>
     </dependency>
+    <dependency>
+	  <groupId>servletapi</groupId>
+	  <artifactId>servlet-api</artifactId>
+	  <version>2.4-20040521</version>
+	</dependency>
   </dependencies>
   <build>
     <finalName>photoshowservice</finalName>
   </build>
+  <repositories>
+      <repository>
+          <id>nexus</id>
+          <name>Nexus Repository</name>
+          <url>http://localhost:8081/nexus/content/groups/public/</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>true</enabled>
+          </snapshots>
+      </repository>
+  </repositories>
 </project>
